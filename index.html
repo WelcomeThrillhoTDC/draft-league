@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>New Kawaii Draft League</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-left">
+      <a href="index.html" class="nav-title">New Kawaii Draft League</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="rules.html" class="nav-link">Rules</a>
+    </div>
+  </nav>
+
+  <div class="main-content">
+  
+  <h1>Leaderboard</h1>
+
+  <label for="season-select">Season:</label>
+  <select id="season-select">
+  <option value="Lorwyn Eclipsed">Lorwyn Eclipsed</option>
+  <option value="Avatar: The Last Airbender">Avatar: The Last Airbender</option>
+  <option value="Marvel's Spider-Man">Marvel's Spider-Man</option>
+  <option value="Edge of Eternities">Edge of Eternities</option>
+  <option value="Final Fantasy">Final Fantasy</option>
+  <option value="Tarkir: Dragonstorm">Tarkir: Dragonstorm</option>
+  <option value="Aetherdrift">Aetherdrift</option>
+</select>
+
+<table id="leaderboard">
+  <thead>
+    <tr>
+      <th data-key="rank">Rank</th>
+      <th data-key="Player">Player</th>
+      <th data-key="Points">Points</th>
+      <th data-key="Wins">Wins</th>
+      <th data-key="Draws">Draws</th>
+      <th data-key="Matches">Matches</th>
+      <th data-key="WinPct">Win %</th>
+    </tr>
+  </thead>
+  <tbody id="table-body"></tbody>
+</table>
+
+  <script src="leaderboard.js"></script>
+
+  </div>
+  
+</body>
+
+
+
+</html>
